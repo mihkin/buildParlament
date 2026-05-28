@@ -1,0 +1,49 @@
+﻿{
+  "events": [
+    {
+      "id": "military_coup",
+      "name": "Военный переворот",
+      "description": "Случайный участник теряет 10 сторонников, другой случайный участник получает 5 сторонников.",
+      "effectType": "RandomInfluenceChange",
+      "targetType": "AnyParticipant",
+      "value": 10,
+      "chanceWeight": 1.0
+    },
+    {
+      "id": "instability",
+      "name": "Нестабильность",
+      "description": "Все участники теряют 3 сторонников.",
+      "effectType": "RemoveInfluence",
+      "targetType": "Everyone",
+      "value": 3,
+      "chanceWeight": 1.0
+    },
+    {
+      "id": "trust_growth",
+      "name": "Рост доверия",
+      "description": "Участник с минимальным сторонников получает +6 сторонников.",
+      "effectType": "AddInfluence",
+      "targetType": "AnyParticipant",
+      "value": 6,
+      "chanceWeight": 1.0
+    },
+    {
+      "id": "political_crisis",
+      "name": "Политический кризис",
+      "description": "Все участники теряют 2 ПО.",
+      "effectType": "RemovePoliticalPoints",
+      "targetType": "Everyone",
+      "value": 2,
+      "chanceWeight": 1.0
+    },
+    {
+      "id": "mass_protests",
+      "name": "Массовые протесты",
+      "description": "Лидер по сторонников теряет 8 сторонников.",
+      "effectType": "RemoveInfluence",
+      "targetType": "AnyParticipant",
+      "value": 8,
+      "chanceWeight": 1.0
+    }
+  ]
+}
